@@ -1,0 +1,12 @@
+<odoo>
+	<data>
+  <record id="feuille_de_temps_menu_action" model="ir.actions.act_window">
+        	<field name="name">Feuille_de_temps</field>
+        	<field name="res_model">account.analytic.line</field>
+
+</record>
+    	<menuitem id="projet_menu"
+              	name="projet"/>
+    	<menuitem id="projet_feuille_de_temps_menu" parent="projet_menu" name="Feuille de temps" action="feuille_de_temps_menu_action"/>
+	</data>
+</odoo>

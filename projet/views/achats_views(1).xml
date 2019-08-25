@@ -1,0 +1,12 @@
+<odoo>
+	<data>
+  <record id="achats_menu_action" model="ir.actions.act_window">
+        	<field name="name">Achats</field>
+        	<field name="res_model">sale.order</field>
+
+</record>
+    	<menuitem id="projet_menu"
+              	name="projet"/>
+    	<menuitem id="projet_achats_menu" parent="projet_menu" name="Achats" action="achats_menu_action"/>
+	</data>
+</odoo>

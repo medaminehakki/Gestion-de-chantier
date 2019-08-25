@@ -1,0 +1,20 @@
+<odoo>
+	<data>
+  <record id="projets_menu_action" model="ir.actions.act_window">
+        	<field name="name">Projets</field>
+        	<field name="res_model">project.project</field>
+	        <field name="inherit_id" ref="project.view_project_kanban"/>
+
+</record>
+	  <record id="analyse_menu_action" model="ir.actions.act_window">
+        	<field name="name">Analyse</field>
+        	<field name="res_model">report.project.task.user</field>
+	        <field name="inherit_id" ref="project.view_task_project_user_graph"/>
+
+</record>
+    	<menuitem id="projet_menu"
+              	name="projet"/>
+    	<menuitem id="projet_projets_menu" parent="projet_menu" name="Projets" action="projets_menu_action"/>
+		<menuitem id="projet_analyse_menu" parent="projet_menu" name="Analyses" action="analyse_menu_action"/>
+	</data>
+</odoo>

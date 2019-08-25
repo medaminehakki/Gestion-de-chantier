@@ -1,0 +1,12 @@
+<odoo>
+	<data>
+  <record id="inventaire_menu_action" model="ir.actions.act_window">
+        	<field name="name">Inventaires</field>
+        	<field name="res_model">stock.picking.type</field>
+            <field name="inherit_id" ref="stock.stock_picking_type_kanban"/>
+</record>
+    	<menuitem id="projet_menu"
+              	name="projet"/>
+    	<menuitem id="projet_inventaire_menu" parent="projet_menu" name="Inventaire" action="inventaire_menu_action"/>
+	</data>
+</odoo>

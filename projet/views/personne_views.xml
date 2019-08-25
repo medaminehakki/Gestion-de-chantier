@@ -1,0 +1,18 @@
+<odoo>
+	<data>
+  <record id="persone_menu_action" model="ir.actions.act_window">
+        	<field name="name">Personnes</field>
+        	<field name="res_model">personne.personne</field>
+        	<field name="view_type">form</field>
+        	<field name="view_mode">tree,form</field>
+        	<field name="domain">[]</field>
+        	<field name="help" type="html">
+            	<p class="oe_view_nocontent_create">Create The First Personne
+            	</p>
+        	</field>
+</record>
+    	<menuitem id="projet_menu"
+              	name="projet"/>
+    	<menuitem id="projet_personne_menu" parent="projet_menu" name="Personne" action="persone_menu_action"/>
+	</data>
+</odoo>
